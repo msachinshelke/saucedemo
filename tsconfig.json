@@ -1,0 +1,46 @@
+{
+  "compilerOptions": {
+    "outDir": "./build",
+    "sourceMap": true,
+    "noImplicitAny": false,
+    "module": "esnext",
+    "target": "ES6",
+    "lib": ["DOM", "DOM.Iterable", "ESNext"],
+    "jsx": "react",
+    "allowJs": true,
+    "moduleResolution": "node",
+    "esModuleInterop": true,
+    "allowSyntheticDefaultImports": true,
+    "noFallthroughCasesInSwitch": true,
+    "skipLibCheck": true,
+    "strict": false,
+    "resolveJsonModule": true,
+    "isolatedModules": true,
+    "noEmit": false,
+    "forceConsistentCasingInFileNames": true,
+    "paths": {
+         "playwright/*": ["./playwright/*"]
+    }
+  },
+  "include": [
+    "./*.js",
+    "./__tests__/setup/*.js",
+    "./app/**/*",
+    "./dev-server.js",
+    "./playwright/*",
+ 
+  ],
+  "exclude": [
+    "app/output",
+    "cert",
+    "coverage",
+    "cypress",
+    "dist",
+    "docs",
+    "helm",
+    "node_modules",
+    "nginx",
+    "setup"
+  ],
+  "types": ["axe-playwright"]
+}

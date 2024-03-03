@@ -1,0 +1,34 @@
+[
+  {
+    "description": "",
+    "elements": [
+      {
+        "description": "",
+        "id": "login-to-saucedemo-and-verify-title-page-\"swag-labs\".;verify-tabs-navigation-in-navbar",
+        "keyword": "Scenario",
+        "line": 6,
+        "name": "Verify Tabs navigation in Navbar",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 7,
+            "name": "User is logged into SauceDemo application",
+            "result": {
+              "status": "undefined",
+              "duration": 0
+            }
+          }
+        ],
+        "tags": [],
+        "type": "scenario"
+      }
+    ],
+    "id": "login-to-saucedemo-and-verify-title-page-\"swag-labs\".",
+    "line": 1,
+    "keyword": "Feature",
+    "name": "Login to SauceDemo and verify title page \"Swag Labs\".",
+    "tags": [],
+    "uri": "playwright\\features\\login.feature"
+  }
+]

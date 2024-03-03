@@ -1,0 +1,7 @@
+<?xml version="1.0"?>
+<testsuite failures="1" skipped="0" name="cucumber-js" time="0" tests="1">
+  <testcase classname="Login to SauceDemo and verify title page &quot;Swag Labs&quot;." name="Verify Tabs navigation in Navbar" time="0">
+    <failure/>
+    <system-out><![CDATA[Given User is logged into SauceDemo application........................undefined]]></system-out>
+  </testcase>
+</testsuite>
