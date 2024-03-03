@@ -5,7 +5,7 @@ let world: SauceWorld;
 let username = "standard_user";
 let password = "secret_sauce";
 
-BeforeStep(async function (this: SauceWorld) {
+BeforeStep(async function(this: SauceWorld) {
   world = this;
 });
 

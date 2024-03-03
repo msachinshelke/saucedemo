@@ -3,7 +3,7 @@ import { Browser, BrowserContext, Page } from "@playwright/test";
 import Login from "./pages-objects/login";
 import { PageObjects } from "./types";
 
-class SauceWorld extends World {
+export class SauceWorld extends World {
   context: BrowserContext;
 
   mock: boolean;
@@ -17,17 +17,16 @@ class SauceWorld extends World {
   password: string;
 
   pageObjects: PageObjects;
-  getLogin() {
+  getLogin(): Login {
     if (!this.pageObjects?.login) {
       throw new Error('"Login" is not defined');
     }
-
     return this.pageObjects.login;
   }
 
   setupPageObjects(page: Page) {
     this.pageObjects = {
-      login: new Login(page), // No need to cast 'page' to 'any' in JavaScript
+      login: new Login(page) // No need to cast 'page' to 'any' in JavaScript
     };
   }
 }
